@@ -7,7 +7,7 @@
 #define LED_PIN    6
 
 // How many NeoPixels are attached to the Arduino?
-#define LED_COUNT 3
+#define LED_COUNT 4
 
 
 // Declare our NeoPixel strip object:
@@ -35,14 +35,8 @@ void setup() {
 // loop() function -- runs repeatedly as long as board is on ---------------
 
 void loop() {
-uint32_t magenta = strip.Color(255, 0, 255);
-uint32_t blue = strip.Color(0, 0, 255);
-int pause = 50;
- 
-  //colorWipe(magenta, pause);
-  //colorWipe(blue, pause);
-  rainbow(5);             // Flowing rainbow cycle along the whole strip
-  //theaterChaseRainbow(200); // Rainbow-enhanced theaterChase variant
+int pause = 100;
+  rainbow(4);             // Flowing rainbow cycle along the whole strip
 }
 
 
